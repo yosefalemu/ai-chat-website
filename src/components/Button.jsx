@@ -1,3 +1,4 @@
+import ButtonGradient from "../assets/svg/ButtonGradient";
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
@@ -9,6 +10,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
   const renderButton = () => (
     <button className={classes} onClick={onClick}>
       <span className={spanClasses}>{children}</span>
+      <ButtonGradient />
       {ButtonSvg(white)}
     </button>
   );
@@ -16,6 +18,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
   const renderLink = () => (
     <a href={href} className={classes}>
       <span className={spanClasses}>{children}</span>
+      <ButtonGradient />
       {ButtonSvg(white)}
     </a>
   );

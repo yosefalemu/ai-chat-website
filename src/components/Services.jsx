@@ -12,8 +12,8 @@ import Section from "./Section";
 
 const Services = () => {
   return (
-    <Section>
-      <div className="container">
+    <Section id="how-to-use">
+      <div className="container pt-16">
         <Heading
           title="Generative AI made for creators."
           text="Brainwave unlocks the potential of AI-powered applications"
